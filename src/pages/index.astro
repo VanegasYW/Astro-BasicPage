@@ -1,0 +1,183 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Card from "../components/Card.astro";
+import { Icon } from "astro-icon";
+---
+
+<BaseLayout>
+    <div id="home" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <h2
+            class="text-center col-span-1 md:col-span-2 mt-10 font-bold text-2xl"
+        >
+            Home
+        </h2>
+        <Card
+            title="Lorem"
+            body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem accusantium placeat eius officiis veniam totam. Earum eos et voluptate dolorem."
+        />
+        <Card
+            title="Lorem"
+            body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem accusantium placeat eius officiis veniam totam. Earum eos et voluptate dolorem."
+        />
+        <Card
+            title="Lorem"
+            body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem accusantium placeat eius officiis veniam totam. Earum eos et voluptate dolorem."
+        />
+        <Card
+            title="Lorem"
+            body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem accusantium placeat eius officiis veniam totam. Earum eos et voluptate dolorem."
+        />
+    </div>
+    <div
+        id="about"
+        class="bg-yellow-400 w-full p-10 mt-10 mb-10 drop-shadow-xl"
+    >
+        <h2 class="text-center font-bold text-2xl">About</h2>
+        <div class="flex flex-col md:flex-row text-center">
+            <div class="p-8">
+                <h3 class="font-bold flex justify-center mb-5">
+                    Lorem <Icon
+                        class="ml-2"
+                        size={24}
+                        name="mdi:car-location"
+                    />
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Libero officia, quas veniam illum similique quod laborum
+                    fuga recusandae deleniti maiores placeat assumenda maxime,
+                    illo eius, mollitia tenetur? Tempora, minus dolorem?
+                </p>
+            </div>
+            <div class="p-8">
+                <h3 class="font-bold flex justify-center mb-5">
+                    Lorem <Icon class="ml-2" size={24} name="mdi:hand-heart" />
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Libero officia, quas veniam illum similique quod laborum
+                    fuga recusandae deleniti maiores placeat assumenda maxime,
+                    illo eius, mollitia tenetur? Tempora, minus dolorem?
+                </p>
+            </div>
+        </div>
+    </div>
+    <div
+        id="products"
+        class="grid gap-4 grid-cols-1 md:grid-cols-3 sm:grid-cols-2"
+    >
+        <h2
+            class="text-center col-span-1 md:col-span-3 sm:col-span-2 font-bold text-2xl"
+        >
+            Products
+        </h2>
+        <div>
+            <Card
+                title="Lorem"
+                body=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quis laboriosam! Quam ullam consequatur fugit? Saepe dignissimos ratione, repellat, nam eos doloremque"
+                useImg={true}
+                src="/assets/principal.jpg"
+            />
+        </div>
+        <div>
+            <Card
+                title="Lorem"
+                body=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quis laboriosam! Quam ullam consequatur fugit? Saepe dignissimos ratione, repellat, nam eos doloremque"
+                useImg={true}
+                src="/assets/principal.jpg"
+            />
+        </div>
+        <div>
+            <Card
+                title="Lorem"
+                body=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quis laboriosam! Quam ullam consequatur fugit? Saepe dignissimos ratione, repellat, nam eos doloremque"
+                useImg={true}
+                src="/assets/principal.jpg"
+            />
+        </div>
+        <div>
+            <Card
+                title="Lorem"
+                body=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quis laboriosam! Quam ullam consequatur fugit? Saepe dignissimos ratione, repellat, nam eos doloremque"
+                useImg={true}
+                src="/assets/principal.jpg"
+            />
+        </div>
+        <div>
+            <Card
+                title="Lorem"
+                body=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quis laboriosam! Quam ullam consequatur fugit? Saepe dignissimos ratione, repellat, nam eos doloremque"
+                useImg={true}
+                src="/assets/principal.jpg"
+            />
+        </div>
+        <div>
+            <Card
+                title="Lorem"
+                body=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quis laboriosam! Quam ullam consequatur fugit? Saepe dignissimos ratione, repellat, nam eos doloremque"
+                useImg={true}
+                src="/assets/principal.jpg"
+            />
+        </div>
+    </div>
+    <div
+        class="bg-yellow-400 w-full p-10 mt-10 mb-10 drop-shadow-xl flex justify-evenly flex-col sm:flex-row"
+        id="contact"
+    >
+        <div class="self-center">
+            <h2 class="text-center text-lg font-bold mb-10">Contact Us</h2>
+            <ul>
+                <li class="flex mb-10">
+                    <Icon class="mr-2" size={25} name="mdi:telephone" /> 123-456-78
+                </li>
+                <li class="flex mb-10">
+                    <Icon class="mr-2" size={25} name="mdi:location-radius" /> 76-20
+                    34th Ave
+                </li>
+                <li class="flex mb-10">
+                    <Icon class="mr-2" size={25} name="mdi:email" /> info@example.com
+                </li>
+            </ul>
+        </div>
+        <form
+            action="mailto:info@example.com"
+            method="get"
+            enctype="text/plain"
+        >
+            <h2 class="font-bold text-center text-lg mb-10">Contact Form</h2>
+            <p class="mb-10">
+                <label class="font-bold" for="name">Name:</label>
+                <input
+                    class="p-1 w-full bg-transparent border-b-2 border-black outline-none"
+                    type="text"
+                    title="Name"
+                    id="name"
+                />
+            </p>
+            <p class="mb-10">
+                <label class="font-bold" for="email">Email:</label>
+                <input
+                    class="p-1 w-full bg-transparent border-b-2 border-black outline-none"
+                    type="email"
+                    title="Email"
+                    id="email"
+                />
+            </p>
+            <p class="mb-10">
+                <label class="font-bold" for="tel">Phone Number:</label>
+                <input
+                    class="p-1 w-full bg-transparent border-b-2 border-black outline-none"
+                    type="tel"
+                    title="Send"
+                    id="Phone Number"
+                />
+            </p>
+            <button
+                type="submit"
+                title="Send"
+                class="self-center bg-black w-full text-white p-1 drop-shadow-2xl rounded-lg hover:text-black hover:bg-white"
+                >Send</button
+            >
+        </form>
+    </div>
+</BaseLayout>
