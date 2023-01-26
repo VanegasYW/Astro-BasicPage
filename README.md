@@ -1,6 +1,13 @@
-## Astro-BasicPage
+# Astro-BasicPage
 
-### 💾 Setup
-- Load dependencies `npm i`
+## 💾 Setup
+- Load dependencies 
 
-- Run server `npm run dev`
+```
+npm i
+```
+
+- Run server 
+```
+npm start
+```
