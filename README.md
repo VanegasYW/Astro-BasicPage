@@ -1,13 +1,16 @@
-# Astro-BasicPage
+# Astro BasicPage
 
 ## 💾 Setup
-- Load dependencies 
+To set up this project, follow these steps:
+
+
+- Install the required dependencies:
 
 ```
 npm i
 ```
 
-- Run server 
+- Start the server:
 ```
 npm start
 ```
