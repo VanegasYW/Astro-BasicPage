@@ -14,3 +14,4 @@ npm i
 ```
 npm start
 ```
+## [🛠 Stack Used](techstack.md)
